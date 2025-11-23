@@ -28,7 +28,7 @@
 
 <!-- Website rss -->
 
-<link rel="alternate" href="/default" title="Hexo" >
+<link rel="alternate" href="/default" title="gzh" >
 
 
 <!-- Website favicon -->
@@ -74,7 +74,7 @@
 
 
   
-  <title>学习方法串讲 - Hexo</title>
+  <title>学习方法串讲 - gzh</title>
 
 <meta name="generator" content="Hexo 8.1.1"></head>
 
@@ -82,7 +82,7 @@
   <div class="scrollPercentage"></div>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/." class="logo">Hexo</a>
+    <a href="/." class="logo">gzh</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -106,7 +106,7 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
       <div class="logo-wrapper">  
-  <a href="/." class="logo">Hexo</a>  
+  <a href="/." class="logo">gzh</a>  
 </div>  
   
 <nav class="site-navbar">  
@@ -152,35 +152,37 @@
 <div class="post-content">
   
     <h1 id="高数"><a href="#高数" class="headerlink" title="高数"></a>高数</h1><h2 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h2><p>高数的学习我们发现陌生的定义很多，并且更多的是用定义和基础的性质在做题，而不是像高中有很多二级结论来秒题，或者说大学不是在培养你做题，而是培养你理解并使用这些概念的能力，所以很多题是告诉你答案让你证明他是对的。</p>
-    
-      <div class="read-more">
-        <a href="/2025/11/23/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E4%B8%B2%E8%AE%B2/" class="read-more-link">posts.read_more</a>
-      </div>
-    
+<span id="more"></span>
+
+<h2 id="学习方法"><a href="#学习方法" class="headerlink" title="学习方法"></a>学习方法</h2><h3 id="本人"><a href="#本人" class="headerlink" title="本人"></a>本人</h3><p>我对于这些概念秉持三步走的想法</p>
+<ol>
+<li>定性的理解定义，知道他在讲什么</li>
+<li>能脱离书本进行定量的计算，完成大部分的题目</li>
+<li>回归定义，重新理解他在表达什么，能够自行从定义出发推导一些基础结论<br>eg:我们就拿<strong>极限</strong>这一贯穿高数始终的概念来讲<br>定义:在自变量变化的某个过程中，如果对应的函数值无限接近于某个确定的数，那么这个确定的数就叫做在这一变化中<strong>函数的极限</strong><br>举个分段函数为例<br>$$<br>f(x) &#x3D;<br>\begin{cases}<br>x, &amp; x &lt; 0,\<br>-1, &amp; x &#x3D; 0,\<br>x + 1, &amp; x &gt; 0.<br>\end{cases}<br>$$<br>我们以x&#x3D;0点的极限为例，简单理解一下。0点的左极限就是f(x)从0的左侧开始去无线逼近0点的函数值，注意这里是逼近，所以他跟f(X0)本身的值是无关的，可以大致理解为如果左边的函数延长到0点，他的函数值会是多少，比如这里就是0，因为y&#x3D;x是过原点的嘛，虽然这是空心的但这代表了左极限。同理，右极限可以理解为x+1在x&#x3D;0处取到的值，也就是1。<br>这是左极限和右极限，我们再来看什么叫极限存在，简单来说就是左极限等于右极限时极限存在。为什么呢，因为定义说自变量变化的过程中，函数值无限接近于<strong>某个</strong>确定的数，如你你左极限不等于右极限，那你从左逼近有一个数，从右逼近又一个数，就有两个值了，不符合定义。<br>简单理解后我们来看他的数学上的定义<br>$$<br>\lim_{x \to x_0} f(x) &#x3D; A<br>\iff<br>\forall \varepsilon &gt; 0, ; \exists \delta &gt; 0, ;<br>当0 &lt; |x - x_0| &lt; \delta 时 \implies |f(x) - A| &lt; \varepsilon.<br>$$<br>这个定义其实非常有意思，他其实在翻译之前那个文字的定义。我们一个个来看，什么叫<strong>无限接近</strong>，就是我任意取一个整数$\varepsilon$ ,我的差值都比他小，同时因为我是自变量也趋近于X0才无限接近的，所以我需要一个$\delta$ 来确定x的范围，这个$|x - x_0|$ 就表示x到x0的距离。<br>感兴趣的话之后可以从定义证明一下这道题<br>$$<br>\lim_{x \to x_0^-} f(x) &#x3D; \infty, \quad<br>\lim_{x \to x_0^+} f(x) &#x3D; \infty<br>;\Rightarrow;<br>\lim_{x \to x_0} f(x) &#x3D; \infty.<br>$$</li>
+</ol>
+<h3 id="kk"><a href="#kk" class="headerlink" title="kk"></a>kk</h3><p>kk是我们高中班主任，物理老师，他当时跟我们说，判断你一个概念懂没懂，就是给你一张白纸，一只笔，把你能想到的所有相关知识点都写上去，这样才能帮你判断你哪个地方没掌握<br>这里也就能引申出一种学习方法——整理<br>整理的目的是有一个清晰的自我认知<br>我相信我们一部分人可能有这种感觉，就是明明我上课都基本听懂了，但做题就是做不出来，不知道自己哪里不会，反正就是不会做。最彻底的方法就是像kk所说的把会的都写到白纸上，找老师或是找我分析一下，当然这非常费时间，但回报肯定是值得的。次一点就是像我现在做的，上课的笔记我都记在草稿纸上，回来了再统一整理到笔记本上，因为黑板上的是老师的思路，你跟着他的思路走自然都听得懂，只有自己整理的才是自己的思路，才能让你在做题的时候随时调用。</p>
+<h1 id="程序设计"><a href="#程序设计" class="headerlink" title="程序设计"></a>程序设计</h1><p>这里我想说的是，电脑是一个计算能力特别强大的工具，程序设计的目的就是让你和电脑共同去实现某一个功能，这里有两个主要的评判标准，首先就是有没有完成任务，也就是题有没有做对，其次是代码的效率，你不能只作为一个翻译官，把题目一字一句翻译成代码让AI算(当然你能把他都翻译对也是挺有本事的)，举一个简单的例子，我要计算1加到100的和，我如果纯粹翻译，我可能写成</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int sum = 0;</span><br><span class="line">for (int i = 1;i &lt;= 100;i++)&#123;</span><br><span class="line">	sum += i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这段代码的运行效率是非常低的，因为我循环了100次<br>但我们学过等差数列求和，我们也可以写成</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int sum = (1 + 100) * 100 / 2;</span><br></pre></td></tr></table></figure>
+<p>这样代码只需要算一个公式就行了，效率就高很多</p>
+<p>我想说什么呢，就是你要去主动的优化你的算法，这样不仅方便把思路落实到代码(因为你把一些特殊的条件转化成了你会的、更容易写的条件)，也让代码的效率提高</p>
+<p>对于初学者来说(其实我也算初学者)，我觉得最主要的是多练，多看，这个看可以是看题解(别人写的优秀算法)，也可以是看网课(当然你要整理成你自己的知识)，我们的目的不是完成一道题目，而是不断思考有没有更优秀的算法，能更快的解决这道题，并且能适用于更多的题目</p>
+<p>这里我个人有个小建议——找规律，因为代码是可以无限次上传的，并且我只需要答案符合就行了，也就是说我只要找到了规律我就可以往上套，我不需要严谨的证明他，大不了错了我再换个思路，比如期中考那道金字塔的题目<br>1<br>2    3<br>4    5   6<br>7    8   9  10<br>11 12 13 14 15<br>我需要找在奇数行、奇数列上的奇数<br>我可以关注奇数行<br>第一行1个<br>第三行没有<br>第五行3个<br>第七行没有<br>第九行5个<br>可以看出来是奇数行隔一个有数，并且呈等差数列排布<br>我就可以写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">int sum = 0;</span><br><span class="line">for (int i = 0;i &lt;= n;i++)&#123;</span><br><span class="line">	if (i % 4 == 1)&#123;</span><br><span class="line">		sum += (i + 1) / 2;//这里就是根据等差数列凑一下第几行和几个数的关系</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>当然写到这儿这道题已经对了，但是还能优化。因为我的i既然都是除以4余1的，我就可以</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int sum = 0;</span><br><span class="line">for (int i = 1;i &lt;= n;i += 4)&#123;</span><br><span class="line">	sum += (i + 1) / 2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里我循环的次数是原来的1&#x2F;4，并且我不需要判断条件了<br>当然我们也可以继续优化</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a = (n - 1) / 4 + 1;//找有几个是符合i % 4 == 1的，也即等差数列的项数</span><br><span class="line">int an = 1 + (a - 1) * 2;//等差数列是个公差为2的奇数列，用公式找到末项</span><br><span class="line">int sum = (1 + an) * a / 2;//等差数列求和</span><br></pre></td></tr></table></figure>
+<p>这里我压根就不用循环了，直接根据等差数列的公式就能求出答案</p>
+
   
 </div>
-
 
 
 
   
   <!-- Post Copyright -->
-
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span>Author: </span>
-    <a href="http://example.com">John Doe</a>
-  </p>
-  <p class="copyright-item">
-    <span>Link: </span>
-    <a href="http://example.com/2025/11/23/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E4%B8%B2%E8%AE%B2/">http://example.com/2025/11/23/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E4%B8%B2%E8%AE%B2/</a>
-  </p>
-  <p class="copyright-item">
-    <span>License: </span>
-    
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
-  </p>
-</div>
 
     
 
